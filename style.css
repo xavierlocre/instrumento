@@ -42,8 +42,8 @@ body {
   .sonidoboton {
     width: 100px;
     height: 100px;
-    font-size: 24px;
-    background-color: #eaeaea;
+    font-size: 34px;
+    background-color: #eaeaea78;
     border: none;
     border-radius: 50%;
     margin: 10px;
@@ -54,4 +54,55 @@ body {
     outline: none;
   }
   
+  .sonidoboton[data-key="65"] {
+    position: fixed;
+    top: 380px;
+    left: 590px;
+  }
+  .sonidoboton[data-key="83"] {
+    position: fixed;
+    top: 550px;
+    left: 540px;
+  }
+  .sonidoboton[data-key="68"] {
+    position: fixed;
+    top: 690px;
+    left: 490px;
+  }
+  
+ .sonidoboton[data-key="65"].active {
+    animation: shake 0.8s linear;
+  }
+  @keyframes shake {
+    0% { transform: translateX(0); }
+    20% { transform: translateX(-10px); }
+    40% { transform: translateX(10px); }
+    60% { transform: translateX(-10px); }
+    80% { transform: translateX(10px); }
+    100% { transform: translateX(0); }
+  }
+  
+  .sonidoboton[data-key="83"].active {
+    animation: shake 0.4s linear;
+  }
+    @keyframes shake {
+    0% { transform: translateX(0); }
+    20% { transform: translateX(-10px); }
+    40% { transform: translateX(10px); }
+    60% { transform: translateX(-10px); }
+    80% { transform: translateX(10px); }
+    100% { transform: translateX(0); }
+  }
+  
+  .sonidoboton[data-key="68"].active {
+    animation: shake 0.4s linear;
+  }
+  @keyframes shake {
+    0% { transform: translateX(0); }
+    20% { transform: translateX(-10px); }
+    40% { transform: translateX(10px); }
+    60% { transform: translateX(-10px); }
+    80% { transform: translateX(10px); }
+    100% { transform: translateX(0); }
+  }
   

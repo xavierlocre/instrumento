@@ -26,13 +26,13 @@ function stopSound(keyCode) {
   button.classList.remove('active');
 }
 
-// Evento clic en los botones
+/* // Evento clic en los botones
 buttons.forEach(button => {
   button.addEventListener('click', function() {
     const keyCode = this.getAttribute('data-key');
     playSound(keyCode);
   });
-});
+}); */
 
 // Evento tecla presionada
 window.addEventListener('keydown', function(event) {
@@ -45,3 +45,18 @@ window.addEventListener('keyup', function(event) {
   const keyCode = event.keyCode.toString();
   stopSound(keyCode);
 });
+// Evento clic en los botones
+buttons.forEach(button => {
+    button.addEventListener('click', function() {
+      const keyCode = this.getAttribute('data-key');
+      playSound(keyCode);
+  
+      // Agregar la clase "active" al botón
+      this.classList.add('active');
+  
+      // Eliminar la clase "active" después de un breve retraso
+      setTimeout(() => {
+        this.classList.remove('active');
+      }, 100);
+    });
+  });
