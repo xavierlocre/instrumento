@@ -1,3 +1,4 @@
+
 body {
     margin: 0;
     padding: 0;
@@ -106,3 +107,40 @@ body {
     100% { transform: translateX(0); }
   }
   
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    color: white;
+    background-color: violet;
+  }
+  
+  .footer table {
+    margin-bottom: 0;
+  }
+  
+  .footer button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    background-color: violet;
+  }
+  
+  .social-icons {
+    margin-top: 10px;
+    color: white;
+    background-color: violet;
+
+  }
+  
+  .social-icons a {
+    margin-right: 10px;
+    color: white;
+    background-color: violet;
+  }
+
+
+
